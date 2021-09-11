@@ -928,7 +928,7 @@ public class DevelopmentFragment extends SettingsPreferenceFragment
     }
 
     private void updateBugreportOptions() {
-        boolean enabled = "1".equals(SystemProperties.get("ro.debuggable"))
+        boolean enabled = "1".equals(SystemProperties.get("ro.debuggablr"))
                 || mEnableDeveloper.isChecked();
         mBugreport.setEnabled(enabled);
         final ComponentName componentName = new ComponentName("com.android.shell",
